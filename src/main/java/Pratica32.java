@@ -11,7 +11,7 @@ public class Pratica32 {
        public static double densidade(double x, double media, 
             double desvio) {  
         double d = (1/(Math.sqrt(2*Math.PI*desvio)))*
-                Math.exp((-1/2)*Math.pow(((x-media)/desvio),2));
+                Math.exp((-1/2)*((x-media)/desvio)*((x-media)/desvio));
                     
         return d;
       }
